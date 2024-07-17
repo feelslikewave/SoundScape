@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundscape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Soundscape</h1>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Browse</a></li>
+      <li><a href="#">Favorites</a></li>
+      <li><a href="#">Custom</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <section class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Focus</a></li>
+        <li><a href="#">Relaxation</a></li>
+        <li><a href="#">Sleep</a></li>
+        <li><a href="#">Productivity</a></li>
+        <li><a href="#">Nature</a></li>
+      </ul>
+    </section>
+
+    <section class="featured-mixes">
+      <h2>Featured Mixes</h2>
+      <div class="mix-card">
+        <img src="mix1-image.jpg" alt="Focus Sounds">
+        <h3>Focus</h3>
+        <p>Increase your concentration with ambient sounds...</p>
+      </div>
+      <div class="mix-card">
+        <img src="mix2-image.jpg" alt="Relaxation Sounds">
+        <h3>Relaxation</h3>
+        <p>Unwind and de-stress with calming soundscapes...</p>
+      </div>
+      <div class="mix-card">
+        <img src="mix3-image.jpg" alt="Sleep Sounds">
+        <h3>Sleep</h3>
+        <p>Drift off to peace with gentle and soothing sounds...</p>
+      </div>
+    </section>
+
+    <section class="player">
+      <h2>Now Playing:</h2>
+      <div class="player-controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+      </div>
+      <div class="volume-control">
+        <label for="volume">Volume:</label>
+        <input type="range" min="0" max="1" value="0.5" step="0.01" class="volume-slider" id="volume">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Soundscape</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
