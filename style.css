@@ -17,61 +17,40 @@ body {
   0% {
     background-color: #264653;
   }
-  5% {
-    background-color: #2a9d8f;
-  }
-  10% {
+  8% {
     background-color: #3c6e71;
   }
   15% {
-    background-color: #283618;
-  }
-  20% {
-    background-color: #c1121f;
-  }
-  25% {
     background-color: #ef233c;
   }
-  30% {
+  23% {
     background-color: #0077b6;
   }
-  35% {
-    background-color: #03045e;
-  }
-  40% {
+  31% {
     background-color: #7b2cbf;
   }
-  45% {
-    background-color: #240046;
-  }
-  50% {
+  38% {
     background-color: #f6aa1c;
   }
-  55% {
+  46% {
     background-color: #fe7f2d;
   }
-  60% {
-    background-color: #a04b29;
-  }
-  65% {
+  54% {
     background-color: #d81159;
   }
-  70% {
+  62% {
     background-color: #780116;
   }
-  75% {
-    background-color: #380403;
-  }
-  80% {
+  69%{
     background-color: #008000;
   }
-  85% {
+  77% {
     background-color: #004b23;
   }
-  90% {
+  82% {
     background-color: #3b9379;
   }
-  95% {
+  92% {
     background-color: #266897;
   }
   100% {
