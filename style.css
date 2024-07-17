@@ -9,6 +9,7 @@ body {
   padding: 0;
   background-image: url("background.jpg"); /* Replace with your background image */
   background-size: cover;
+  overflow: hidden;
   color: #ffffff;
 }
 
@@ -56,4 +57,100 @@ body {
     background-color: #264653;
   }
   
+}
+
+header {
+  font-family: playwrite hr;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header h1{
+  font-size: 40px;
+  margin: 10px 0 20px 0;
+  cursor: context-menu;
+  transition: .3s ease-in-out;
+}
+
+header h1:hover{
+  font-size: 50px;
+  margin: 0;
+}
+
+hr {
+  position: relative;
+  top: 70px;
+  margin: 30px;
+  background-color:#ffffff;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  top: 60px;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.categories {
+  flex-basis: 15%; /* Adjust width for wider screens (optional) */
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #ffffff20;
+  @media (max-width: 768px) {
+    width: 100%; /* Make full width for phones */
+  }
+}
+
+.categories h2 {
+  margin-bottom: 10px;
+}
+
+.categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.categories a{
+  color: #ffffff8a;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.categories a:hover{
+  color: #ffffff;
+}
+
+.sounds {
+  flex-basis: 85%; /* Adjust width for wider screens (optional) */
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #ffffff20;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff20;
 }
