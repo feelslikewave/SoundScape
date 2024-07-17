@@ -7,12 +7,9 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
   background-image: url("background.jpg"); /* Replace with your background image */
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #333;
+  color: #ffffff;
 }
 
 @keyframes changeBg {
@@ -59,101 +56,4 @@ body {
     background-color: #264653;
   }
   
-}
-
-.header {
-  background-color: #e0e0e000;
-  font-family: Playwrite hr;
-  color: #ffffff;
-  padding: 15px 20px;
-  text-align: center;
-}
-
-.main {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  /* Media query for wider screens (tablets and above) */
-  @media (min-width: 768px) {
-    display: flex;
-  }
-}
-
-.categories {
-  flex-basis: 20%; /* Adjust width for wider screens (optional) */
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #ffffff30;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Media query for smaller screens (phones) */
-  @media (max-width: 768px) {
-    width: 100%; /* Make full width for phones */
-  }
-}
-
-.categories h2 {
-  margin-bottom: 10px;
-}
-
-.categories ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories li {
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.featured-mixes {
-  flex-basis: 60%; /* Adjust width for wider screens (optional) */
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #ffffff50;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-left: 20px;
-  /* Media query for smaller screens (phones) */
-  @media (max-width: 768px) {
-    width: 100%; /* Make full width for phones */
-  }
-}
-
-.featured-mixes h2 {
-  margin-bottom: 10px;
-}
-
-.mix-card {
-  display: flex;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Prevent image overflow */
-}
-
-.mix-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.mix-card .content {
-  flex: 1;
-  padding: 10px;
-}
-
-.mix-card h3 {
-  margin-bottom: 5px;
-}
-
-.mix-card p {
-  color: #ffffff;
-}
-
-.player {
-  /* Removed flex properties and width for bottom positioning */
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #ffffff50;
 }
