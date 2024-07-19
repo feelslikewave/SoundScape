@@ -21,7 +21,7 @@ body {
     background-color: #3c6e71;
   }
   15% {
-    background-color: #47ffb2;
+    background-color: #3a8666;
   }
   23% {
     background-color: #0077b6;
@@ -81,7 +81,7 @@ header h1:hover{
   margin: 0;
 }
 
-hr {
+.header-hr {
   position: relative;
   top: 70px;
   margin: 30px;
@@ -91,6 +91,7 @@ hr {
 .main {
   display: flex;
   flex-direction: row;
+  height: 63%;
   margin: 20px;
   padding: 20px;
   position: relative;
@@ -102,7 +103,7 @@ hr {
 
 .categories {
   flex-basis: 15%; /* Adjust width for wider screens (optional) */
-  padding: 15px;
+  padding: 0 15px;
   margin-right: 10px;
   border-radius: 10px;
   background-color: #ffffff20;
@@ -137,20 +138,38 @@ hr {
   color: #ffffff;
 }
 
-.sounds {
+.sounds-title {
   flex-basis: 85%; /* Adjust width for wider screens (optional) */
-  padding: 20px;
+  padding: 0 15px;
   margin-left: 10px;
   border-radius: 10px;
   background-color: #ffffff20;
+}
+
+.sound-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: #22b71f;
+}
+
+.sound {
+  
+}
+
+.footer-hr {
+  position: relative;
+  margin: 80px 30px;
+  background-color:#ffffff;
 }
 
 .player {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 25px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
-  background-color: #ffffff20;
+  /* background-color: #ffffff20; */
 }
