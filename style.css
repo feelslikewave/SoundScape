@@ -7,11 +7,11 @@ body {
   gap: 15px;
   color: #ffffff8a;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: context-menu;
   animation: changeBg 180s linear infinite;
   background-size: cover;
   margin: 0;
-  overflow: hidden;
 }
 
 @keyframes changeBg {
@@ -119,7 +119,39 @@ hr{
 
 .categories .playlist{
   background-color: #ffffff19;
+  color: #ffffff8a;
+  fill: #ffffff8a;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 15px;
   width: 16%;
   height: fit-content;
   border-radius: 15px;
+  box-shadow: 2px 5px 15px #ffffff11;
+  transition: .2s ease-in-out;
+}
+
+.categories .playlist:hover{
+  color: #ffffff;
+  fill: #ffffff;
+  box-shadow: 2px 5px 15px #ffffff1b;
+}
+
+.categories .playlist svg{
+  height: 80px; 
+}
+
+.categories .playlist h3{
+  margin-bottom: 0;
+}
+
+.sounds-list{
+  width: 70%;
+}
+
+.sounds-list .sound-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
 }
