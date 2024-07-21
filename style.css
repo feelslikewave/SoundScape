@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
 
 body {
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  color: #ffffff8a;
+  text-align: center;
+  cursor: context-menu;
   animation: changeBg 180s linear infinite;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("background.jpg"); /* Replace with your background image */
   background-size: cover;
+  margin: 0;
   overflow: hidden;
-  color: #ffffff;
 }
 
 @keyframes changeBg {
@@ -56,120 +57,69 @@ body {
   100% {
     background-color: #264653;
   }
-  
 }
 
-header {
+header{
+  font-size: 20px;
+  color: #ffffff;
   font-family: playwrite hr;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 header h1{
-  font-size: 40px;
-  margin: 10px 0 20px 0;
-  cursor: context-menu;
-  transition: .3s ease-in-out;
+  margin: 15px auto 25px auto;
+  width: fit-content;
 }
 
-header h1:hover{
-  font-size: 50px;
-  margin: 0;
+hr{
+  width: 90%;
+  border: 1.3px solid white;
 }
 
-.header-hr {
-  position: relative;
-  top: 70px;
-  margin: 30px;
-  background-color:#ffffff;
+.player{
+  padding: auto;
+  margin: auto;
+  width: fit-content;
 }
 
-.main {
+.player .player-controls{
+  background-color: #ffffff19;
+  margin: auto;
+  width: 250px;
+  height: 50px;
   display: flex;
-  flex-direction: row;
-  height: 63%;
-  margin: 20px;
-  padding: 20px;
-  position: relative;
-  top: 60px;
-  @media (min-width: 768px) {
-    display: flex;
-  }
+  justify-content: space-around;
+  border-radius: 35px;
 }
 
-.categories {
-  flex-basis: 15%; /* Adjust width for wider screens (optional) */
-  padding: 0 15px;
-  margin-right: 10px;
-  border-radius: 10px;
-  background-color: #ffffff20;
-  @media (max-width: 768px) {
-    width: 100%; /* Make full width for phones */
-  }
+.player .player-controls .button{
+  margin: 15px;
+  width: 90px;
 }
 
-.categories h2 {
-  margin-bottom: 10px;
-}
-
-.categories ul {
-  list-style: none;
+.player .player-controls .button svg{
   margin: 0;
   padding: 0;
-}
-
-.categories li {
-  margin-bottom: 5px;
-  margin-left: 10px;
+  width: 20px;
   cursor: pointer;
+  fill: #ffffff8a;
+  transition: .1s ease-in-out;
 }
 
-.categories a{
-  color: #ffffff8a;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
+.player .player-controls .button svg:hover{
+  fill: #ffffff;
 }
 
-.categories a:hover{
-  color: #ffffff;
-}
-
-.sounds-title {
-  flex-basis: 85%; /* Adjust width for wider screens (optional) */
-  padding: 0 15px;
-  margin-left: 10px;
-  border-radius: 10px;
-  background-color: #ffffff20;
-}
-
-.sound-container {
-  max-width: 80%;
+.categories{
   display: flex;
   flex-direction: row;
-  background-color: #22b71f;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
 }
 
-.sound {
-  
-}
-
-.footer-hr {
-  position: relative;
-  margin: 80px 30px;
-  background-color:#ffffff;
-}
-
-.player {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 25px;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  /* background-color: #ffffff20; */
+.categories .playlist{
+  background-color: #ffffff19;
+  width: 16%;
+  height: fit-content;
+  border-radius: 15px;
 }

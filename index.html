@@ -3,71 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soundscape</title>
+  <title>SoundScape</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <header class="header">
-    <h1>Soundscape</h1>
+    <h1>SoundScape</h1>
+    <hr>
   </header>
 
-  <hr class="header-hr">
-
-  <main class="main">
-    <section class="categories">
-      <h2>Categories</h2>
-      <ul>
-        <li><a href="#">Focus</a></li>
-        <li><a href="#">Relaxation</a></li>
-        <li><a href="#">Sleep</a></li>
-        <li><a href="#">Productivity</a></li>
-        <li><a href="#">Nature</a></li>
-      </ul>
-    </section>
-
-    <section class="sounds-title">
-      <h2>Sounds</h2>
-      <div class="sounds-container">
-        <div class="sound">sound-1</div>
-        <div class="sound">sound-2</div>
-        <div class="sound">sound-3</div>
-        <div class="sound">sound-4</div>
-        <div class="sound">sound-5</div>
-        <div class="sound">sound-6</div>
-        <div class="sound">sound-7</div>
-        <div class="sound">sound-8</div>
-        <div class="sound">sound-9</div>
-        <div class="sound">sound-10</div>
-        <div class="sound">sound-11</div>
-        <div class="sound">sound-12</div>
-        <div class="sound">sound-13</div>
-        <div class="sound">sound-14</div>
-        <div class="sound">sound-15</div>
-        <div class="sound">sound-16</div>
-        <div class="sound">sound-17</div>
-        <div class="sound">sound-18</div>
-        <div class="sound">sound-19</div>
-        <div class="sound">sound-20</div>
+  <section class="player">
+    <div class="player-controls">
+      <div class="button" id="pause">
+        <?xml version="1.0" ?>
+        <svg height="fit-content" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
+          <path d="M224,435.8V76.1c0-6.7-5.4-12.1-12.2-12.1h-71.6c-6.8,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6   C218.6,448,224,442.6,224,435.8z"/><path d="M371.8,64h-71.6c-6.7,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6c6.7,0,12.2-5.4,12.2-12.2V76.1   C384,69.4,378.6,64,371.8,64z"/></g>
+        </svg>
       </div>
-    </section>
-  </main>
-
-  <hr class="footer-hr">
-
-  <footer>
-    <section class="player">
-      <div class="player-controls">
-        <button id="play">Play</button>
-        <button id="pause">Pause</button>
-        <button id="clear">Clear</button>
+      <div class="button" id="play">
+        <?xml version="1.0" ?>
+        <svg height="fit-content" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"/>
+        </svg>
       </div>
-      <div class="volume-control">
-        <label for="volume">Volume:</label>
-        <input type="range" min="0" max="1" value="0.5" step="0.01" class="volume-slider" id="volume">
+      <div class="button" id="clear">
+        <?xml version="1.0" ?>
+        <svg height="fit-content" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/>
+        </svg>
+        
       </div>
-    </section>
-  </footer>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <div class="categories">
+    <div class="playlist" id="playlist1">Focus</div>
+    <div class="playlist" id="playlist1">Relax</div>
+    <div class="playlist" id="playlist1">Sleep</div>
+    <div class="playlist" id="playlist1">Productivity</div>
+    <div class="playlist" id="playlist1">Nature</div>
+  </div>
+
+  <section class="sounds-list">
+    <div class="sound-container" id="sound-container">
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+      <div class="sound" id="sound1">Sound 1</div>
+    </div>
+  </section>
+
 </body>
 </html>
