@@ -119,22 +119,22 @@ hr{
 
 .categories .playlist{
   background-color: #ffffff19;
-  color: #ffffff8a;
-  fill: #ffffff8a;
+  color: #ffffff;
+  fill: #ffffff;
   display: flex;
   flex-direction: column;
   margin: 10px;
   padding: 15px;
   width: 16%;
   height: fit-content;
+  cursor: pointer;
   border-radius: 15px;
   box-shadow: 2px 5px 15px #ffffff11;
   transition: .2s ease-in-out;
 }
 
 .categories .playlist:hover{
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: #ffffff4a;
   box-shadow: 2px 5px 15px #ffffff1b;
 }
 
@@ -147,6 +147,7 @@ hr{
 }
 
 .sounds-list{
+  margin: auto;
   width: 70%;
 }
 
